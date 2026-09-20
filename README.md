@@ -63,6 +63,32 @@
 수식·함수 그래프·통계 그래프·기하 도형을 새 자료에도 요청할 수 있습니다. 주변 글·답란은 브라우저에서 고치며, 수식 자체나 그래프 데이터를 바꾸는 전용 입력창은 기본 편집기에 없습니다. 그런 변경은 HTML을 첨부해 AI에 요청하거나 원식과 MathML·SVG를 직접 수정합니다.
 
 HTML 링크를 누르면 GitHub에서 코드가 보일 수 있습니다. 파일 화면의 다운로드 버튼 또는 **HTML 바로 내려받기**로 저장한 뒤 브라우저에서 여세요. 위 예시는 각각 A4 한 쪽이며, 새 자료의 분량은 요청에 따라 달라집니다.
+
+### Monochrome Ledger · 흑백과 글자만으로 만드는 또렷한 지면
+
+검정·회색·흰색으로 구분하고, 두 제안을 나란히 놓습니다. 큰 A·B 표식과 짧은 제목으로 읽는 순서를 잡고 아래에는 판단 기준과 최종 제안을 쓰게 했습니다.
+
+![Monochrome Ledger: 독서 시간 휴대전화 규칙을 비교하는 가상 토론 자료](docs/images/monochrome-ledger.png)
+
+예시: **독서 시간 휴대전화 규칙을 비교하는 가상 토론 자료**. 같은 디자인 방향을 다른 주제나 교과에도 적용할 수 있습니다.
+
+> “Monochrome Ledger 스타일로 만들어 줘. 색 없이 글자 크기와 여백으로 구분하고, 두 입장을 나란히 읽은 뒤 내 판단을 쓸 수 있게 해 줘.”
+
+[편집 가능한 HTML](examples/monochrome-ledger.html) · [HTML 바로 내려받기](https://github.com/pblsketch/worksheet-craft/raw/refs/heads/main/examples/monochrome-ledger.html)
+
+
+### Playful Geometry · 도형과 부드러운 색으로 만드는 밝은 지면
+
+파랑과 주황 도형을 넓게 펼치고, 큰 안내와 둥근 분류 공간을 조합합니다. 색상뿐 아니라 모양과 글자 표식으로도 대상을 구별할 수 있습니다.
+
+![Playful Geometry: 같은 도형을 다른 기준으로 분류하는 수학 활동](docs/images/playful-geometry.png)
+
+예시: **같은 도형을 다른 기준으로 분류하는 수학 활동**. 같은 디자인 방향을 다른 주제나 교과에도 적용할 수 있습니다.
+
+> “Playful Geometry 스타일로 만들어 줘. 그림은 크게, 안내는 짧게, 도형을 직접 묶거나 그려 볼 공간은 넉넉하게 잡아 줘.”
+
+[편집 가능한 HTML](examples/playful-geometry.html) · [HTML 바로 내려받기](https://github.com/pblsketch/worksheet-craft/raw/refs/heads/main/examples/playful-geometry.html)
+
 ## 처음 사용하기
 
 ### 1. 사용하는 AI에 스킬 설치하기
