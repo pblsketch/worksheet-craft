@@ -98,5 +98,20 @@
     "bottom_blank_before_mm": 15.4,
     "target_bottom_blank_mm": 15,
     "answer_growth_factor": 1.006
+  },
+  "stem-geometry-inquiry": {
+    "bottom_blank_before_mm": 36.2,
+    "target_bottom_blank_mm": 15,
+    "answer_growth_factor": 1.242
+  },
+  "stem-observation-record": {
+    "bottom_blank_before_mm": 24.4,
+    "target_bottom_blank_mm": 15,
+    "answer_growth_factor": 1.103
+  },
+  "stem-statistics-inquiry": {
+    "bottom_blank_before_mm": 18.6,
+    "target_bottom_blank_mm": 15,
+    "answer_growth_factor": 1.057
   }
 }

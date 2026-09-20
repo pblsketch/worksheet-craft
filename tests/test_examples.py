@@ -2,8 +2,9 @@
 
 from __future__ import annotations
 
-import os
 import json
+import math
+import os
 import threading
 from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
@@ -120,12 +121,27 @@ def test_example_edit_save_print(runtime, path, tmp_path):
     assert page.locator("[data-teach-controls]").count() == 1
     if path.stem == "stem-data-lab":
         data = json.loads(page.locator("script.experiment-data").text_content())
-        points = page.locator("circle[data-temperature]").evaluate_all("els=>els.map(e=>({series:e.dataset.series,t:+e.dataset.time,v:+e.dataset.temperature,x:+e.getAttribute('cx'),y:+e.getAttribute('cy')}))")
+        points = page.locator("circle[data-temperature]").evaluate_all(
+            "els=>els.map(e=>({series:e.dataset.series,t:+e.dataset.time,v:+e.dataset.temperature,x:+e.getAttribute('cx'),y:+e.getAttribute('cy')}))"
+        )
         assert len(points) == 10
         for point in points:
             assert point["v"] == data["series"][point["series"]][data["times"].index(point["t"])]
             assert point["x"] == 65 + point["t"] * 62.5
             assert point["y"] == 222 - (point["v"] - 28) * 13
+    if path.stem == "stem-geometry-inquiry":
+        vertices = [tuple(map(float, pair.split(','))) for pair in page.locator('[data-triangle]').get_attribute('data-vertices').split()]
+        angles = []
+        for i, vertex in enumerate(vertices):
+            a, b = vertices[(i+1)%3], vertices[(i+2)%3]
+            u, v = (a[0]-vertex[0],a[1]-vertex[1]), (b[0]-vertex[0],b[1]-vertex[1])
+            angles.append(math.degrees(math.acos((u[0]*v[0]+u[1]*v[1])/(math.hypot(*u)*math.hypot(*v)))))
+        assert angles == pytest.approx([40,75,65], abs=.01)
+    if path.stem == "stem-statistics-inquiry":
+        rows = page.locator('.sheet table:not(.title-table)').first.locator('tbody tr')
+        values = [[int(x) for x in rows.nth(i).locator('td').all_text_contents()[1:]] for i in range(2)]
+        assert [sum(row)/len(row) for row in values] == [30,60]
+        assert [sorted(row)[3] for row in values] == [30,30]
     if path.stem == "layout-basic-sequential":
         assert page.locator(".subject-line [data-edit]").last.inner_text() == "차시 · 2차시"
         assert page.locator(".title-table tr").nth(1).locator("td").last.inner_text() == "편집 확인"

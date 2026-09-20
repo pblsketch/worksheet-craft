@@ -43,3 +43,5 @@ Extra lower-page space is assigned to existing writing, drawing and calculation 
 ## Mathematics and science layouts
 
 The mathematics example follows one grade/unit instead of collecting unrelated formulas. Short warm-ups have small response areas; modelling and independent application have more working space. The experimental notebook connects apparatus, variables and repeated trials. The data-analysis sheet places a source table beside its corresponding scientific graph and separates observation, explanation and limitations.
+
+The expanded math set includes single-unit equation modelling, geometric reasoning and representative-value interpretation. The science set includes controlled experiments, graph-based interpretation and direct observation/classification. Each page has its own activity sequence rather than a mixed collection of unrelated exercises.

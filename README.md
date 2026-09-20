@@ -81,6 +81,30 @@ Claude·Claude Code·Codex에서 사용하는 활동지 제작 스킬입니다. 
 
 [편집 가능한 HTML](examples/stem-data-lab.html) · [바로 내려받기](https://github.com/pblsketch/worksheet-craft/raw/refs/heads/main/examples/stem-data-lab.html)
 
+### 도형 탐구형 · 수학
+
+삼각형의 외각 한 주제로 각도 계산, 성질 설명, 다른 삼각형에 적용하기를 이어 갑니다. 계산한 각도와 일치하는 도형과 직접 그릴 공간을 제공합니다.
+
+![도형 탐구형 · 수학 활동지](docs/images/stem-geometry-inquiry.png)
+
+[편집 가능한 HTML](examples/stem-geometry-inquiry.html) · [바로 내려받기](https://github.com/pblsketch/worksheet-craft/raw/refs/heads/main/examples/stem-geometry-inquiry.html)
+
+### 통계 탐구형 · 수학
+
+한 값만 달라지는 두 가상 자료에서 평균·중앙값을 비교합니다. 계산표, 변화의 이유, 목적에 맞는 대표값 선택으로 구성했습니다.
+
+![통계 탐구형 · 수학 활동지](docs/images/stem-statistics-inquiry.png)
+
+[편집 가능한 HTML](examples/stem-statistics-inquiry.html) · [바로 내려받기](https://github.com/pblsketch/worksheet-craft/raw/refs/heads/main/examples/stem-statistics-inquiry.html)
+
+### 관찰 기록형 · 과학
+
+잎 세 장을 직접 관찰해 스케치하고 특징을 기록합니다. 자신이 만든 분류 기준을 친구가 적용해 보는 과정까지 연결했습니다.
+
+![관찰 기록형 · 과학 활동지](docs/images/stem-observation-record.png)
+
+[편집 가능한 HTML](examples/stem-observation-record.html) · [바로 내려받기](https://github.com/pblsketch/worksheet-craft/raw/refs/heads/main/examples/stem-observation-record.html)
+
 <details><summary>글꼴·포인트 색 참고 예시 12종 보기</summary>
 
 아래 예시도 모두 인쇄용 흰 바탕입니다. 설명의 색은 글자·선·내용 그림에 적용하는 참고 방향입니다. 종이색·색 면 등 원본 스타일의 배경 처리는 흰색으로 바꿨습니다.

@@ -53,3 +53,7 @@ After reviewing excess lower-page whitespace, authored answer and sketch regions
 Three new examples passed browser checks for header placement, shading/white areas, lower-page whitespace, editing, structure changes/undo, saving/reopening and one-page A4 output. The two-series temperature chart was checked against its source data at all 10 points. Mathematical conditions in the money and rectangle problems were checked for consistent positive solutions. Previously published examples were unchanged and not retested in this update.
 
 The mathematics sheet follows one middle-school linear-equation lesson: basic checks, guided modelling and independent application with verification. Scientific examples provide an experimental record and a fictional-data interpretation task. Runtime code was unchanged. Claude ZIP extraction and bundled helper execution were verified; model-generated output inside Claude remains untested.
+
+### Expanded inquiry set
+
+Three further examples (geometry, statistics and observation) passed targeted browser tests; there are six newly verified math/science examples in total. Geometry tests calculate all three angles from the actual SVG vertices. Statistics tests check means and medians from the displayed data. The new pages were visually inspected and all produce one-page A4 output with usable response areas and lower-page margins. Existing 17 examples were unchanged and were not rerun.
