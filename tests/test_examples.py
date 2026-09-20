@@ -52,6 +52,8 @@ def test_example_edit_save_print(runtime, path, tmp_path):
     page.goto(f"{origin}/examples/{path.name}")
     page.evaluate("document.fonts.ready")
     slides = page.locator("[data-slide]").count()
+    if not slides:
+        assert page.locator(".sheet, .sheet *").evaluate_all("els=>els.every(e=>['rgb(255, 255, 255)','rgba(0, 0, 0, 0)'].includes(getComputedStyle(e).backgroundColor))")
     title = page.locator("h1[data-edit],h2[data-edit]").first
     title.click()
     title.fill("Edited lesson title")

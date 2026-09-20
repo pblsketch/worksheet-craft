@@ -1,16 +1,44 @@
 # Worksheet Craft
 
-**수업에 필요한 활동지를 만들고, 브라우저에서 바로 고치세요.**
+**인쇄해서 쓰기 좋은 흰 바탕 활동지를 만들고, 브라우저에서 고치세요.**
 
-교사가 주제와 활동을 말하면 AI가 읽기 자료, 질문, 표, 답란을 갖춘 **편집 가능한 HTML 활동지**를 만드는 Claude·Claude Code·Codex에서 사용하는 스킬입니다. 학생 수업과 교사 연수에 모두 사용할 수 있습니다.
+Claude·Claude Code·Codex에서 사용하는 활동지 제작 스킬입니다. 읽기 자료, 질문, 표, 답란, 수식과 그래프를 교사의 의도에 맞게 구성합니다. 종이 바탕·자료 상자·표·답란은 흰색으로 두고, 필요한 글자·선·그림에만 포인트 색을 씁니다.
 
-예를 들어 “중학교 국어 시간에 광고의 주장과 근거를 비교하고, 과장된 문구를 고쳐 쓰는 활동지”를 요청할 수 있습니다. 초안이 나온 뒤에는 질문을 바꾸고, 답란을 늘리고, 표에 행을 추가해 수업에 맞춥니다.
+## 같은 주제, 다른 지면
 
-![Editorial 스타일로 만든 국어 활동지. 번호가 있는 세 활동, 비교표, 서술 답란이 배치되어 있습니다.](docs/images/editorial.png)
+세 예시는 모두 **「우리 학교 쉼터, 어디에 두면 좋을까?」**를 다룹니다. 같은 가상 조사와 관찰 자료를 사용하지만 읽기, 판단, 기록 공간의 배치가 다릅니다. 색을 바꾸는 대신 실제 작업 방식에 맞게 레이아웃을 고릅니다.
 
-[디자인 둘러보기](#디자인-갤러리) · [설치하고 시작하기](#처음-사용하기) · [편집 기능 보기](#직접-고칠-수-있는-것)
+세 구성은 비교 예시입니다. 내용에 맞게 섞거나 새로운 배치를 요청할 수 있으며, 모든 자료를 이 세 틀에 맞추지는 않습니다.
 
-## 디자인 갤러리
+### 잡지형
+
+자료를 왼쪽의 좁은 열에, 질문과 긴 답란을 오른쪽의 넓은 열에 둡니다. 자료를 오가며 근거를 쓰기 좋습니다.
+
+![잡지형 흰 바탕 활동지](docs/images/layout-magazine.png)
+
+[편집 가능한 HTML](examples/layout-magazine.html) · [바로 내려받기](https://github.com/pblsketch/worksheet-craft/raw/refs/heads/main/examples/layout-magazine.html)
+
+### 탐구 지도형
+
+가운데 판단 질문을 두고 기준·근거·걱정·최종 제안을 주변에 연결합니다. 생각 사이의 관계를 보며 씁니다.
+
+![탐구 지도형 흰 바탕 활동지](docs/images/layout-inquiry-map.png)
+
+[편집 가능한 HTML](examples/layout-inquiry-map.html) · [바로 내려받기](https://github.com/pblsketch/worksheet-craft/raw/refs/heads/main/examples/layout-inquiry-map.html)
+
+### 작업 노트형
+
+큰 스케치 공간 옆에 짧은 메모 영역을 두고, 아래에서 최종 제안으로 정리합니다. 구상하고 계산하며 쓰기 좋습니다.
+
+![작업 노트형 흰 바탕 활동지](docs/images/layout-work-notebook.png)
+
+[편집 가능한 HTML](examples/layout-work-notebook.html) · [바로 내려받기](https://github.com/pblsketch/worksheet-craft/raw/refs/heads/main/examples/layout-work-notebook.html)
+
+<details><summary>글꼴·포인트 색 참고 예시 12종 보기</summary>
+
+아래 예시도 모두 인쇄용 흰 바탕입니다. 설명의 색은 글자·선·내용 그림에 적용하는 참고 방향입니다. 종이색·색 면 등 원본 스타일의 배경 처리는 흰색으로 바꿨습니다.
+
+
 
 아래 이름은 **여백, 글자, 선, 색, 배치를 설명하는 디자인 방향**입니다. 특정 교과나 활동 목적에 묶여 있지 않습니다. 예를 들어 Notebook으로 국어 독서 기록을, Editorial로 과학 실험 활동지를 만들 수도 있습니다.
 
@@ -18,7 +46,9 @@
 
 큰 제목, 넓은 여백, 절제된 벽돌색을 사용합니다. 광고 자료와 비교표를 나란히 놓아 읽을 부분과 쓸 부분을 연결합니다. 상자 위나 옆에 장식용 강조선을 붙이지 않습니다.
 
-위 이미지는 **「이 광고, 믿어도 될까?」** 예시입니다. 광고 읽기, 주장·근거 비교, 문구 수정 활동을 담았습니다.
+![Editorial 흰 바탕 활동지](docs/images/editorial.png)
+
+이 예시는 **「이 광고, 믿어도 될까?」** 예시입니다. 광고 읽기, 주장·근거 비교, 문구 수정 활동을 담았습니다.
 
 > “Editorial 스타일로 만들어 줘. 제목은 크게, 본문은 차분하게, 강조색은 벽돌색 하나만 써 줘.”
 
@@ -154,6 +184,9 @@ HTML 링크를 누르면 GitHub에서 코드가 보일 수 있습니다. 파일 
 > “Sakura Chroma 스타일로 만들어 줘. 이 예시의 시각적 특징을 활용하되, 내용과 쓰는 공간은 내 수업에 맞게 구성해 줘.”
 
 [편집 가능한 HTML](examples/sakura-chroma.html) · [HTML 바로 내려받기](https://github.com/pblsketch/worksheet-craft/raw/refs/heads/main/examples/sakura-chroma.html)
+
+
+</details>
 
 ## 처음 사용하기
 

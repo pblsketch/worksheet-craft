@@ -23,3 +23,7 @@ Monochrome Ledger uses paired arguments and black/grey typography. Playful Geome
 Pin & Paper, Cobalt Grid, Grove, Notebook Tabs, Retro Zine and Sakura Chroma were studied through the locally available frontend-slides-editable style descriptions, template metadata and preview images. The new HTML and lesson text are original adaptations, not copied upstream templates. Worksheet paper areas, graph accuracy, response space, short-label centering and the absence of ornamental top/left accent rules take precedence over decorations in the reference.
 
 Notebook Tabs uses working section anchors in the worksheet and current-stage labels in the slide deck. Some serif headings use system fonts and may differ by operating system. The main sans-serif font remains embedded.
+
+## Print layout revision
+
+Page, panel, table and response-area backgrounds are white. Colour is limited to useful text, lines and content illustrations. The primary gallery compares three different compositions using the same fictional school seating-location data and learning objective. The older twelve visual directions remain available as secondary typography/accent references, converted to white-paper versions.

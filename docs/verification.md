@@ -27,3 +27,7 @@ Two new examples in this repository passed browser edit, structure change, undo,
 ## v0.4.0 reference gallery, checked on 2026-09-20
 
 Six new examples in this repository were verified in Chrome over HTTP for editing, structure change, undo, saving/reopening, no external resource requests and PDF page counts. Across the two repositories, 12 targeted tests passed (11 prior examples deselected). The Cobalt Grid worksheet also checks formula source and calculated points. The Notebook Tabs worksheet checks navigation to the third activity; its final stage-label presentation was rechecked after the visual adjustment. Worksheets produce one A4 page each; slide decks produce three 16:9 pages each. Prior examples were preserved without rerunning the old engine suite. Claude ZIP extraction and bundled helper execution were verified.
+
+## v0.5.0 white-paper layouts, checked on 2026-09-20
+
+All 15 worksheet examples passed editing, saving/reopening, table structure changes and undo, external-resource checks, and A4 single-page output. Browser assertions verify white or transparent CSS backgrounds throughout worksheet content. Three same-topic layouts were added: magazine columns, inquiry map and work notebook. Their printed pages were visually inspected. Existing decorative panel backgrounds were removed; meaningful illustration colours, graph strokes and ruled answer lines remain. Slide examples were not changed or retested in this update. The Claude ZIP extracted helper passed its execution check.
