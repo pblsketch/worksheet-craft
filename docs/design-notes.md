@@ -31,3 +31,7 @@ Page, panel, table and response-area backgrounds are white. Colour is limited to
 ## Basic layouts and header hierarchy
 
 Sequential questions and a structured response table are first-class choices, alongside alternative layouts. Diversity does not require replacing familiar classroom formats. Gallery headers use short titles, compact student information and a brief instruction. Manual poster-style line breaks and layout-description labels were removed; body text and existing answer spaces were preserved.
+
+## Reviewed header and table shading
+
+The subject and lesson sit above, outside the table. The title spans the first row and is centred. The next row holds participant information. Body-table headings have a pale teal fill, an intentional exception to the otherwise white-paper design. Workshop examples retain suitable affiliation/group labels. This header is the default guidance; explicit user variations take precedence.

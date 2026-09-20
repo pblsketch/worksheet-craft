@@ -37,3 +37,9 @@ All 15 worksheet examples passed editing, saving/reopening, table structure chan
 Two basic worksheet compositions were added before the magazine, inquiry-map and work-notebook examples. All 17 gallery headers now fit in 20.0 to 24.5 mm, compared with 42.9 to 57.1 mm for the prior 15 examples. Measurements use Chrome print media; the top page margin is not included in header height. See headers-before.json and headers-after.json for individual values. No fixed header height or clipping is used. Title font controls remain editable; a browser test changes and restores the basic example title size.
 
 All worksheet examples were checked for white backgrounds, editing, table changes/undo, saved-file reopening and one-page A4 PDF output. Basic sequential, basic record and work-notebook printed pages were visually inspected. Slide examples were unchanged. The updated Claude ZIP helper was verified after isolated extraction.
+
+## v0.7.0 reviewed table header, checked on 2026-09-21
+
+Applied the approved subject/lesson line above the title table to all 17 worksheet examples. Titles are centred in a merged first row; class/number/name (or workshop affiliation/group/name) follow in the second row. Body-table column headings use pale shading; page and answer backgrounds remain white.
+
+All 17 browser tests passed. A targeted follow-up also verified lesson and name edits survive saving/reopening. Checks cover external metadata placement, centred titles, background/shading scope, body-table changes/undo and A4 one-page printing. Body text outside headers matches the preceding committed version in all 17 files. Headers measure 35.1 mm including the subject/lesson line and instruction; individual values are in headers-table.json. Printed magazine, inquiry-map and workshop pages were visually inspected. Slides were unchanged. Claude ZIP extraction/helper execution was verified.
