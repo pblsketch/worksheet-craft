@@ -47,3 +47,9 @@ All 17 browser tests passed. A targeted follow-up also verified lesson and name 
 ### Writing-space allocation and empty-field correction
 
 After reviewing excess lower-page whitespace, authored answer and sketch regions were enlarged in proportion to their existing dimensions. Print measurement leaves about 12-15 mm below the footer without shrinking any writing region or changing body text. All 17 worksheet tests passed again, now including a lower-page whitespace assertion. The shared editor passed 10 integration tests, including a regression proving an authored empty sketch area retains its minimum height in edit and preview modes. The empty-field fallback CSS previously overrode equally specific authored styles; it now has zero selector specificity. New printed inquiry-map, work-notebook and poster-draft pages were visually checked.
+
+## v0.8.0 mathematics and science examples, checked on 2026-09-21
+
+Three new examples passed browser checks for header placement, shading/white areas, lower-page whitespace, editing, structure changes/undo, saving/reopening and one-page A4 output. The two-series temperature chart was checked against its source data at all 10 points. Mathematical conditions in the money and rectangle problems were checked for consistent positive solutions. Previously published examples were unchanged and not retested in this update.
+
+The mathematics sheet follows one middle-school linear-equation lesson: basic checks, guided modelling and independent application with verification. Scientific examples provide an experimental record and a fictional-data interpretation task. Runtime code was unchanged. Claude ZIP extraction and bundled helper execution were verified; model-generated output inside Claude remains untested.

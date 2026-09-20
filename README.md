@@ -52,6 +52,35 @@ Claude·Claude Code·Codex에서 사용하는 활동지 제작 스킬입니다. 
 
 [편집 가능한 HTML](examples/layout-work-notebook.html) · [바로 내려받기](https://github.com/pblsketch/worksheet-craft/raw/refs/heads/main/examples/layout-work-notebook.html)
 
+
+## 수학·과학용 지면 예시
+
+수식·도형·실험 장치·측정표·그래프를 실제 과제에 맞게 배치한 예시입니다. 교과 이름으로 색만 바꾼 양식이 아니라 풀이와 기록 방식이 다른 지면입니다.
+
+### 단계형 문제지 · 중1 수학
+
+일차방정식의 활용 한 차시에 맞춘 문제지입니다. 짧은 기본 문제로 시작해 물건값 문제에서 수량 관계와 식 세우기를 연습하고, 화단 문제를 스스로 푼 뒤 원래 조건으로 답을 확인합니다.
+
+![단계형 문제지 · 중1 수학 활동지](docs/images/stem-equation-practice.png)
+
+[편집 가능한 HTML](examples/stem-equation-practice.html) · [바로 내려받기](https://github.com/pblsketch/worksheet-craft/raw/refs/heads/main/examples/stem-equation-practice.html)
+
+### 실험 노트형 · 과학
+
+종이 다리의 모양을 비교하는 실험입니다. 장치 그림과 절차, 예상·통제 조건, 3회 측정표, 결과 해석을 연결했습니다.
+
+![실험 노트형 · 과학 활동지](docs/images/stem-lab-notebook.png)
+
+[편집 가능한 HTML](examples/stem-lab-notebook.html) · [바로 내려받기](https://github.com/pblsketch/worksheet-craft/raw/refs/heads/main/examples/stem-lab-notebook.html)
+
+### 자료 분석형 · 과학
+
+가상 온도 자료의 표와 두 계열 그래프를 함께 읽습니다. 값 확인, 근거를 들어 설명하기, 해석의 한계를 나눠 씁니다.
+
+![자료 분석형 · 과학 활동지](docs/images/stem-data-lab.png)
+
+[편집 가능한 HTML](examples/stem-data-lab.html) · [바로 내려받기](https://github.com/pblsketch/worksheet-craft/raw/refs/heads/main/examples/stem-data-lab.html)
+
 <details><summary>글꼴·포인트 색 참고 예시 12종 보기</summary>
 
 아래 예시도 모두 인쇄용 흰 바탕입니다. 설명의 색은 글자·선·내용 그림에 적용하는 참고 방향입니다. 종이색·색 면 등 원본 스타일의 배경 처리는 흰색으로 바꿨습니다.

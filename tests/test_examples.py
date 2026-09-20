@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import os
+import json
 import threading
 from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
@@ -68,7 +69,9 @@ def test_example_edit_save_print(runtime, path, tmp_path):
             page.locator(".title-table h1").evaluate("e=>getComputedStyle(e).textAlign") == "center"
         )
         assert page.locator(".title-table tr").count() == 2
-        bottom_blank = page.locator(".sheet").evaluate("e=>297-(e.querySelector('footer').getBoundingClientRect().bottom-e.getBoundingClientRect().top)*25.4/96")
+        bottom_blank = page.locator(".sheet").evaluate(
+            "e=>297-(e.querySelector('footer').getBoundingClientRect().bottom-e.getBoundingClientRect().top)*25.4/96"
+        )
         assert 10 <= bottom_blank <= 17
     title = page.locator("h1[data-edit],h2[data-edit]").first
     title.click()
@@ -90,13 +93,20 @@ def test_example_edit_save_print(runtime, path, tmp_path):
         assert page.locator("[data-slide]").count() == slides + 1
         page.locator("[data-cmd=undo]").click()
         assert page.locator("[data-slide]").count() == slides
-    else:
+    elif page.locator(".sheet table:not(.title-table) td[data-edit]").count():
         cell = page.locator(".sheet table:not(.title-table) td[data-edit]").first
         cell.click()
-        cell.fill("Edited response")
+        cell.fill("Edited")
         page.locator("[data-cmd=row]").click()
         page.locator("[data-cmd=undo]").click()
-        assert cell.inner_text() == "Edited response"
+        assert cell.inner_text() == "Edited"
+    else:
+        response = page.locator("[data-answer-space][data-edit]").first
+        response.click()
+        response.fill("Edited")
+        page.locator("[data-cmd=copy]").click()
+        page.locator("[data-cmd=undo]").click()
+        assert response.inner_text() == "Edited"
     with page.expect_download() as download:
         page.locator("[data-cmd=save]").click()
     saved = tmp_path / "saved.html"
@@ -108,6 +118,14 @@ def test_example_edit_save_print(runtime, path, tmp_path):
     page.goto(f"{origin}/saved.html")
     assert page.locator("h1[data-edit],h2[data-edit]").first.inner_text() == "Edited lesson title"
     assert page.locator("[data-teach-controls]").count() == 1
+    if path.stem == "stem-data-lab":
+        data = json.loads(page.locator("script.experiment-data").text_content())
+        points = page.locator("circle[data-temperature]").evaluate_all("els=>els.map(e=>({series:e.dataset.series,t:+e.dataset.time,v:+e.dataset.temperature,x:+e.getAttribute('cx'),y:+e.getAttribute('cy')}))")
+        assert len(points) == 10
+        for point in points:
+            assert point["v"] == data["series"][point["series"]][data["times"].index(point["t"])]
+            assert point["x"] == 65 + point["t"] * 62.5
+            assert point["y"] == 222 - (point["v"] - 28) * 13
     if path.stem == "layout-basic-sequential":
         assert page.locator(".subject-line [data-edit]").last.inner_text() == "차시 · 2차시"
         assert page.locator(".title-table tr").nth(1).locator("td").last.inner_text() == "편집 확인"

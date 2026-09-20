@@ -39,3 +39,7 @@ The subject and lesson sit above, outside the table. The title spans the first r
 ### Use the lower page for the learner
 
 Extra lower-page space is assigned to existing writing, drawing and calculation areas. The footer is not artificially pinned down and text is not enlarged to disguise unused space. Page fitting is an authoring step for the gallery, not a fixed-height runtime restriction; edited content can continue to grow naturally.
+
+## Mathematics and science layouts
+
+The mathematics example follows one grade/unit instead of collecting unrelated formulas. Short warm-ups have small response areas; modelling and independent application have more working space. The experimental notebook connects apparatus, variables and repeated trials. The data-analysis sheet places a source table beside its corresponding scientific graph and separates observation, explanation and limitations.

@@ -83,5 +83,20 @@
     "bottom_blank_before_mm": 51.2,
     "target_bottom_blank_mm": 15,
     "answer_growth_factor": 1.647
+  },
+  "stem-data-lab": {
+    "bottom_blank_before_mm": 17.7,
+    "target_bottom_blank_mm": 15,
+    "answer_growth_factor": 1.049
+  },
+  "stem-lab-notebook": {
+    "bottom_blank_before_mm": 35.9,
+    "target_bottom_blank_mm": 15,
+    "answer_growth_factor": 1.523
+  },
+  "stem-equation-practice": {
+    "bottom_blank_before_mm": 15.4,
+    "target_bottom_blank_mm": 15,
+    "answer_growth_factor": 1.006
   }
 }
