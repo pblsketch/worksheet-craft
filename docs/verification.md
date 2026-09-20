@@ -16,4 +16,6 @@ The gallery screenshots show actual example HTML. Editor screenshots show tempor
 
 ## Checked on 2026-09-20
 
-Windows 11, Python 3.14.2, Chrome. Three included examples passed the repository browser tests. Worksheet examples printed as one A4 page each; slide examples printed as three 16:9 pages each. The shared editor also passed nine targeted integration tests in the development workspace. Other browsers and operating systems have not been verified in this release.
+Windows 11, Python 3.14.2, Chrome. All 4 examples passed browser editing, save/reopen, undo, no external resource requests, and PDF page checks. Worksheets printed as one A4 page each; slide examples printed as three 16:9 pages each. Formula/graph tests verify fraction markup, source preservation and three calculated points. Shared editor integration tests: 9 passed.
+
+Claude upload ZIP: one skill root, SKILL.md, relative references, bundled Python helper and MIT license. The helper was executed after extracting each ZIP to an isolated directory. Packaging follows the linked official Claude documentation. Actual generation inside Claude or Claude Code has not been tested in this release. Browser-dependent checks in a Claude environment remain conditional on available tools.
