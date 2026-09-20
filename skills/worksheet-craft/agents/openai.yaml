@@ -1,0 +1,4 @@
+interface:
+  display_name: "Worksheet Craft"
+  short_description: "수업과 연수의 목적에 맞춰 다양한 디자인의 편집 가능한 HTML 활동지 제작"
+  default_prompt: "$worksheet-craft로 내 요구에 맞는 활동지를 만들고 브라우저에서 편집·저장할 수 있게 해 줘."
