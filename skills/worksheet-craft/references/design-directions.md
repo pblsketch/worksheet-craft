@@ -38,3 +38,16 @@
 ## 참고 자료를 볼 때
 
 겉모양보다 활동 번호의 계층, 발문과 답란의 거리, 응답 형식, 도움 질문, 피드백 뒤 수정 공간을 관찰한다. 여러 참고 자료의 장점을 목적에 맞게 조합한다. 특정 자료의 장식과 순서를 그대로 복제하거나, 한 사례의 치수를 모든 활동의 규칙으로 만들지 않는다.
+
+## Additional reference directions
+
+| Style | Visual grammar | Adaptation |
+|---|---|---|
+| Pin & Paper | Yellow paper, ink blue, loose memo placement | Use notes as real observation or response areas; omit ornamental pins and binder holes. |
+| Cobalt Grid | Cobalt typography, precise grid, editorial hierarchy | Use actual mathematical grids and calculated coordinates; omit pixel ornaments and accent rules. |
+| Grove | Forest green, cream, classical serif hierarchy | Keep worksheet writing areas light; mix dark and light presentation scenes. |
+| Notebook Tabs | Paper page, coloured section tabs | Label actual sections; make screen tabs navigate when appropriate. |
+| Retro Zine | Beige paper, saturated green, oversized print-like type | Vary source, headline and draft space; preserve readability and actual response space. |
+| Sakura Chroma | Cream paper, retro multicolour palette, geometric motifs | Use colours to distinguish real categories; use an illustration only when it relates to content. |
+
+These directions can be combined or replaced by a user reference. They are not a closed preset list, required palette or fixed layout. Centre short table labels and numerical entries where appropriate. Keep explanatory text left-aligned. Do not add decorative top or left accent rules.
