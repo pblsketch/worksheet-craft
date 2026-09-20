@@ -1,0 +1,70 @@
+{
+  "cobalt-grid": {
+    "height_mm": 24.5,
+    "bottom_from_page_top_mm": 34.5
+  },
+  "editorial": {
+    "height_mm": 24.5,
+    "bottom_from_page_top_mm": 34.5
+  },
+  "graph-paper": {
+    "height_mm": 24.5,
+    "bottom_from_page_top_mm": 34.5
+  },
+  "grove": {
+    "height_mm": 24.5,
+    "bottom_from_page_top_mm": 34.5
+  },
+  "layout-basic-record": {
+    "height_mm": 20,
+    "bottom_from_page_top_mm": 30
+  },
+  "layout-basic-sequential": {
+    "height_mm": 20,
+    "bottom_from_page_top_mm": 30
+  },
+  "layout-inquiry-map": {
+    "height_mm": 20,
+    "bottom_from_page_top_mm": 30
+  },
+  "layout-magazine": {
+    "height_mm": 20,
+    "bottom_from_page_top_mm": 30
+  },
+  "layout-work-notebook": {
+    "height_mm": 20,
+    "bottom_from_page_top_mm": 30
+  },
+  "monochrome-ledger": {
+    "height_mm": 24.5,
+    "bottom_from_page_top_mm": 34.5
+  },
+  "notebook-tabs": {
+    "height_mm": 24.5,
+    "bottom_from_page_top_mm": 34.5
+  },
+  "notebook": {
+    "height_mm": 24.5,
+    "bottom_from_page_top_mm": 34.5
+  },
+  "pin-and-paper": {
+    "height_mm": 24.5,
+    "bottom_from_page_top_mm": 34.5
+  },
+  "playful-geometry": {
+    "height_mm": 24.5,
+    "bottom_from_page_top_mm": 34.5
+  },
+  "retro-zine": {
+    "height_mm": 24.5,
+    "bottom_from_page_top_mm": 34.5
+  },
+  "sakura-chroma": {
+    "height_mm": 24.5,
+    "bottom_from_page_top_mm": 34.5
+  },
+  "soft-grid": {
+    "height_mm": 24.5,
+    "bottom_from_page_top_mm": 34.5
+  }
+}

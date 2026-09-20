@@ -6,9 +6,25 @@ Claude·Claude Code·Codex에서 사용하는 활동지 제작 스킬입니다. 
 
 ## 같은 주제, 다른 지면
 
-세 예시는 모두 **「우리 학교 쉼터, 어디에 두면 좋을까?」**를 다룹니다. 같은 가상 조사와 관찰 자료를 사용하지만 읽기, 판단, 기록 공간의 배치가 다릅니다. 색을 바꾸는 대신 실제 작업 방식에 맞게 레이아웃을 고릅니다.
+다섯 예시는 모두 **「우리 학교 쉼터, 어디에 두면 좋을까?」**를 다룹니다. 익숙한 기본형 두 가지를 먼저 보여 드리고, 잡지형·탐구 지도형·작업 노트형을 함께 비교합니다. 같은 자료와 목표를 사용하되 작업에 맞게 배치를 고릅니다.
 
-세 구성은 비교 예시입니다. 내용에 맞게 섞거나 새로운 배치를 요청할 수 있으며, 모든 자료를 이 세 틀에 맞추지는 않습니다.
+기본형은 자료를 읽고 차례로 쓰는 활동에 잘 맞습니다. 복잡한 구성이 필요하지 않다면 기본형으로 시작해도 됩니다. 다른 배치가 필요하면 섞거나 새롭게 구성합니다. 제목부는 짧게 두고 본문과 쓰는 공간을 우선합니다.
+
+### 기본형 · 순서대로 쓰기
+
+간결한 제목과 인적 사항 아래에 자료를 놓고, 번호가 있는 질문과 답란을 위에서 아래로 이어 갑니다. 익숙한 교실 활동지 구성입니다.
+
+![기본형 · 순서대로 쓰기 흰 바탕 활동지](docs/images/layout-basic-sequential.png)
+
+[편집 가능한 HTML](examples/layout-basic-sequential.html) · [바로 내려받기](https://github.com/pblsketch/worksheet-craft/raw/refs/heads/main/examples/layout-basic-sequential.html)
+
+### 기본형 · 기록표
+
+자료를 먼저 읽고 기준·근거·제안을 한 표에 차례로 씁니다. 짧은 항목은 가운데, 질문과 긴 답란은 왼쪽으로 정렬했습니다.
+
+![기본형 · 기록표 흰 바탕 활동지](docs/images/layout-basic-record.png)
+
+[편집 가능한 HTML](examples/layout-basic-record.html) · [바로 내려받기](https://github.com/pblsketch/worksheet-craft/raw/refs/heads/main/examples/layout-basic-record.html)
 
 ### 잡지형
 

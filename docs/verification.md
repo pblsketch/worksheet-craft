@@ -31,3 +31,9 @@ Six new examples in this repository were verified in Chrome over HTTP for editin
 ## v0.5.0 white-paper layouts, checked on 2026-09-20
 
 All 15 worksheet examples passed editing, saving/reopening, table structure changes and undo, external-resource checks, and A4 single-page output. Browser assertions verify white or transparent CSS backgrounds throughout worksheet content. Three same-topic layouts were added: magazine columns, inquiry map and work notebook. Their printed pages were visually inspected. Existing decorative panel backgrounds were removed; meaningful illustration colours, graph strokes and ruled answer lines remain. Slide examples were not changed or retested in this update. The Claude ZIP extracted helper passed its execution check.
+
+## v0.6.0 basic layouts and compact headers, checked on 2026-09-21
+
+Two basic worksheet compositions were added before the magazine, inquiry-map and work-notebook examples. All 17 gallery headers now fit in 20.0 to 24.5 mm, compared with 42.9 to 57.1 mm for the prior 15 examples. Measurements use Chrome print media; the top page margin is not included in header height. See headers-before.json and headers-after.json for individual values. No fixed header height or clipping is used. Title font controls remain editable; a browser test changes and restores the basic example title size.
+
+All worksheet examples were checked for white backgrounds, editing, table changes/undo, saved-file reopening and one-page A4 PDF output. Basic sequential, basic record and work-notebook printed pages were visually inspected. Slide examples were unchanged. The updated Claude ZIP helper was verified after isolated extraction.

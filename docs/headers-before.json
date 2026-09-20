@@ -1,0 +1,62 @@
+{
+  "cobalt-grid": {
+    "height_mm": 42.9,
+    "bottom_from_page_top_mm": 52.9
+  },
+  "editorial": {
+    "height_mm": 53,
+    "bottom_from_page_top_mm": 67
+  },
+  "graph-paper": {
+    "height_mm": 44.2,
+    "bottom_from_page_top_mm": 54.2
+  },
+  "grove": {
+    "height_mm": 55.9,
+    "bottom_from_page_top_mm": 66.9
+  },
+  "layout-inquiry-map": {
+    "height_mm": 50.2,
+    "bottom_from_page_top_mm": 65.8
+  },
+  "layout-magazine": {
+    "height_mm": 54.3,
+    "bottom_from_page_top_mm": 69.8
+  },
+  "layout-work-notebook": {
+    "height_mm": 54.3,
+    "bottom_from_page_top_mm": 65.8
+  },
+  "monochrome-ledger": {
+    "height_mm": 56.4,
+    "bottom_from_page_top_mm": 70.4
+  },
+  "notebook-tabs": {
+    "height_mm": 55.5,
+    "bottom_from_page_top_mm": 66.5
+  },
+  "notebook": {
+    "height_mm": 45.3,
+    "bottom_from_page_top_mm": 59.3
+  },
+  "pin-and-paper": {
+    "height_mm": 56.3,
+    "bottom_from_page_top_mm": 67.3
+  },
+  "playful-geometry": {
+    "height_mm": 46.6,
+    "bottom_from_page_top_mm": 57.6
+  },
+  "retro-zine": {
+    "height_mm": 57.1,
+    "bottom_from_page_top_mm": 68.1
+  },
+  "sakura-chroma": {
+    "height_mm": 54.9,
+    "bottom_from_page_top_mm": 64.9
+  },
+  "soft-grid": {
+    "height_mm": 45.4,
+    "bottom_from_page_top_mm": 59.4
+  }
+}

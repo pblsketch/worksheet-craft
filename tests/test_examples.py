@@ -53,10 +53,24 @@ def test_example_edit_save_print(runtime, path, tmp_path):
     page.evaluate("document.fonts.ready")
     slides = page.locator("[data-slide]").count()
     if not slides:
-        assert page.locator(".sheet, .sheet *").evaluate_all("els=>els.every(e=>['rgb(255, 255, 255)','rgba(0, 0, 0, 0)'].includes(getComputedStyle(e).backgroundColor))")
+        # These gallery examples have short titles; reserve the page for the task.
+        assert (
+            page.locator(".sheet > header").evaluate("e=>e.getBoundingClientRect().height")
+            <= 30 * 96 / 25.4
+        )
+        assert page.locator(".sheet, .sheet *").evaluate_all(
+            "els=>els.every(e=>['rgb(255, 255, 255)','rgba(0, 0, 0, 0)'].includes(getComputedStyle(e).backgroundColor))"
+        )
     title = page.locator("h1[data-edit],h2[data-edit]").first
     title.click()
     title.fill("Edited lesson title")
+    if path.stem == "layout-basic-sequential":
+        size = page.locator('[data-prop="font-size"]')
+        size.fill("16")
+        size.press("Tab")
+        assert title.evaluate("e=>parseFloat(getComputedStyle(e).fontSize)") == pytest.approx(16 * 96 / 72, abs=0.1)
+        size.fill("18")
+        size.press("Tab")
     if slides:
         page.locator("[data-cmd=copy-slide]").click()
         assert page.locator("[data-slide]").count() == slides + 1

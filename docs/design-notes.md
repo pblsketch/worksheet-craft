@@ -27,3 +27,7 @@ Notebook Tabs uses working section anchors in the worksheet and current-stage la
 ## Print layout revision
 
 Page, panel, table and response-area backgrounds are white. Colour is limited to useful text, lines and content illustrations. The primary gallery compares three different compositions using the same fictional school seating-location data and learning objective. The older twelve visual directions remain available as secondary typography/accent references, converted to white-paper versions.
+
+## Basic layouts and header hierarchy
+
+Sequential questions and a structured response table are first-class choices, alongside alternative layouts. Diversity does not require replacing familiar classroom formats. Gallery headers use short titles, compact student information and a brief instruction. Manual poster-style line breaks and layout-description labels were removed; body text and existing answer spaces were preserved.
