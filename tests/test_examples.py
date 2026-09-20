@@ -68,6 +68,8 @@ def test_example_edit_save_print(runtime, path, tmp_path):
             page.locator(".title-table h1").evaluate("e=>getComputedStyle(e).textAlign") == "center"
         )
         assert page.locator(".title-table tr").count() == 2
+        bottom_blank = page.locator(".sheet").evaluate("e=>297-(e.querySelector('footer').getBoundingClientRect().bottom-e.getBoundingClientRect().top)*25.4/96")
+        assert 10 <= bottom_blank <= 17
     title = page.locator("h1[data-edit],h2[data-edit]").first
     title.click()
     title.fill("Edited lesson title")

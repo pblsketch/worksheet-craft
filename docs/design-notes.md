@@ -35,3 +35,7 @@ Sequential questions and a structured response table are first-class choices, al
 ## Reviewed header and table shading
 
 The subject and lesson sit above, outside the table. The title spans the first row and is centred. The next row holds participant information. Body-table headings have a pale teal fill, an intentional exception to the otherwise white-paper design. Workshop examples retain suitable affiliation/group labels. This header is the default guidance; explicit user variations take precedence.
+
+### Use the lower page for the learner
+
+Extra lower-page space is assigned to existing writing, drawing and calculation areas. The footer is not artificially pinned down and text is not enlarged to disguise unused space. Page fitting is an authoring step for the gallery, not a fixed-height runtime restriction; edited content can continue to grow naturally.
