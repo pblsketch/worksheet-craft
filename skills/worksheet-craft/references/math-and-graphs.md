@@ -5,22 +5,22 @@
 ## 수식
 
 1. 식과 변수의 뜻을 먼저 확인한다. 분수의 분자·분모, 지수, 괄호 범위를 명확히 한다. 원자료에 없는 식을 인용으로 표시하지 않는다.
-2. 간단한 분수·제곱·근호는 브라우저의 MathML로 작성할 수 있다. 복잡한 LaTeX는 사용 가능한 KaTeX/MathJax 등으로 렌더하고 필요한 자원과 라이선스를 파일에 포함한다. 외부 CDN을 필수로 두지 않는다.
-3. 렌더 결과와 함께 원식을 `data-formula-source` 또는 JSON에 보존한다. 재생성할 때 원식을 고친다. 렌더러 내부 전체에 `data-edit`를 붙이면 수식 구조가 깨질 수 있다.
+2. 편집할 수식은 `data-math` 요소의 `data-latex`에 LaTeX 원문을 기록한다. 동봉된 KaTeX가 렌더하며, 필요한 JS·CSS·글꼴·라이선스는 연결 스크립트가 HTML 안에 포함한다. CDN이나 별도 Node 설치 없이 완성 파일에서 수식을 고칠 수 있다.
+3. `data-display="inline"`은 문장 안, `data-display="block"`은 별도 줄이다. `data-math` 내부에 `data-edit`를 붙이지 않는다. 주변 문장만 `data-edit`로 표시한다. 렌더된 내부 DOM을 직접 고치는 대신 수식 편집창을 사용한다.
 4. 글 안의 식과 별행 수식의 기준선, 분수 높이, 한글과 수식의 간격을 화면과 PDF에서 확인한다. 설명·문항·풀이 공간은 따로 편집할 수 있게 한다.
 
 ```html
-<figure data-piece data-formula-source="y=\\frac{1}{2}x+1">
-  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"
-        aria-label="y는 2분의 1 x 더하기 1">
-    <mi>y</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac>
-    <mi>x</mi><mo>+</mo><mn>1</mn>
-  </math>
+<figure data-piece>
+  <span data-math data-latex="y=\frac{1}{2}x+1" data-display="block"></span>
   <figcaption data-edit>기울기와 y절편을 읽어 봅시다.</figcaption>
 </figure>
+<p data-edit>속력은 <span data-math data-latex="v=\frac{s}{t}"
+  data-display="inline"></span>로 나타냅니다.</p>
 ```
 
-이 예시는 수식 입력창이나 범용 LaTeX 편집기를 제공하지 않는다. 교사는 주변 글과 영역을 직접 고치고, 식 자체의 변경은 AI에 요청하거나 HTML의 MathML·원식을 함께 수정한다. 전용 수식 편집이 요청되면 해당 자료에 필요한 입력 UI를 별도로 연결한다.
+수식을 클릭하거나 초점을 두고 Enter를 누르면 원문·미리보기·적용·취소 창이 열린다. 분수·근호·위첨자·아래첨자 버튼과 펼쳐 보는 연립식·행렬·합·적분·벡터·여러 줄 풀이 버튼이 있다. 오류가 있으면 적용하지 않고 원본을 보존한다. 적용은 되돌리기·다시 하기에 포함되고 원문과 렌더 결과는 HTML에 함께 저장된다. 새 수식은 `추가 → 수식`에서 넣는다. 문장 안에 넣을 때는 글에서 삽입 위치를 먼저 선택한다.
+
+LaTeX 원문에는 `$`나 `$$` 구분자를 붙이지 않는다. HTML 속성에 들어가는 따옴표·앰퍼샌드는 이스케이프한다. 미리보기 초안은 적용 전까지 문서에 저장되지 않는다. 수식 변경이 SVG 그래프의 데이터나 곡선을 자동으로 바꾸지는 않는다. 기존 일반 텍스트·임의의 MathML은 자동 변환하지 않으므로 원식을 확인해 `data-math`로 옮긴다. 이 편집기는 KaTeX 지원 명령을 사용하며 모든 LaTeX 패키지를 실행하는 환경은 아니다.
 
 ## 함수 그래프와 좌표평면
 
